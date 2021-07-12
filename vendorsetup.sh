@@ -40,6 +40,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	
 	# poplar_dsds Only!
 	export FOX_RECOVERY_INSTALL_PARTITION=/dev/block/bootdevice/by-name/FOTAKernel
+	export TARGET_DEVICE_ALT="poplar"
+	export OF_TARGET_DEVICES="poplar,poplar_dsds"
 	
 	export FOX_R11=1
 	export OF_PATCH_AVB20=1
